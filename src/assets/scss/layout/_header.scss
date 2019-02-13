@@ -7,11 +7,21 @@
 /* Header */
 
 	#header {
-		@include padding(5em, 5em, (0, 0, -2em, 0));
+		// OLD @include padding(5em, 5em, (0, 0, -2em, 0));
+		@include padding(1em, 1em, (0, 0, -2em, 0));
 		text-align: center;
+		background-color: white;
+		@include vendor('display', 'flex');
+		@include vendor('flex-wrap', 'wrap');
+		@include vendor('justify-content', 'center');
+		width: calc(100% + #{_size(element-margin)});
 
 		h1 {
 			margin: 0 0 (_size(element-margin) * 0.125) 0;
+		}
+
+		a {
+			border-bottom: none;
 		}
 
 		p {
@@ -19,17 +29,44 @@
 			letter-spacing: _font(letter-spacing);
 		}
 
+		.phoneHeader {
+			color:#666;
+			text-align: right;
+			margin-top:-10px;
+
+			img {
+				height:1.7em;
+
+				margin:0 3px -1px 0;
+			}
+			.phoneNumber {
+				font-size: 2em;
+			}
+			.phoneInfo {
+				font-size: 0.85em;
+				margin-top: -7px;
+				color:gray;
+			}
+
+		}
+
 		&.alt {
-			@include padding(6em, 5em, (1em, 0, 0, 0));
+			// OLD @include padding(6em, 5em, (1em, 0, 0, 0));
+			@include padding(1em, 1em, (-0.2em, 0, 0, 0));
 
 			h1 {
 				font-size: 3.25em;
+			}
+
+			input {
+				border-color: #ff9900;
 			}
 
 			> * {
 				@include vendor('transition', 'opacity 3s ease');
 				@include vendor('transition-delay', '0.5s');
 				opacity: 1;
+				width: calc(#{(100% / 3)} - #{_size(element-margin)});
 			}
 
 			.logo {
@@ -39,11 +76,12 @@
 				));
 				@include vendor('transition-delay', '0s');
 				display: block;
-				margin: 0 0 (_size(element-margin) * 0.75) 0;
+				margin: 0 0 (_size(element-margin) * 0.35) 0;
+				text-align: left;
 
 				img {
 					display: block;
-					margin: 0 auto;
+					margin: 0;
 					max-width: 75%;
 				}
 			}
@@ -53,7 +91,8 @@
 			@include padding(4em, 4em, (0, 0, -2em, 0));
 
 			&.alt {
-				@include padding(5em, 4em, (1em, 0, 0, 0));
+				// @include padding(5em, 4em, (1em, 0, 0, 0));
+				@include padding(1em, 1em, (-0.2em, 0, 0, 0));
 			}
 		}
 

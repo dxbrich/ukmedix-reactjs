@@ -8,7 +8,10 @@
 
 	#main {
 		@include color(invert);
-		border-radius: _size(border-radius-main);
+		//border-radius: _size(border-radius-main);
+		// HACKED
+		width:64em;
+		margin:0 auto;
 
 		> .main {
 			@include padding(5em, 5em);

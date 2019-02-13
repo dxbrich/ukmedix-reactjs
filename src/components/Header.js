@@ -1,14 +1,15 @@
 import React from 'react'
 
-import logo from '../assets/images/logo.svg';
-
 const Header = (props) => (
     <header id="header" className="alt">
-        <span className="logo"><img src={logo} alt="" /></span>
-        <h1>Stellar</h1>
-        <p>Just another free, fully responsive site template<br />
-        design by <a href="https://html5up.net">HTML5 UP</a>.</p>
-    </header>
+				<a href="/" class="logo"><img src="https://d1ixjh1f6kszit.cloudfront.net/img/_logo_ukmedix.png" /></a>
+        <div><input type="text" name="searchSite" placeholder="Search UKMedix Products" /></div>
+        <div className="phoneHeader">
+            <img src="https://d1ixjh1f6kszit.cloudfront.net/phone-logo.png" className="phone" alt="Call UKMedix" />
+            <span className="phoneNumber">0203 286 3349</span><br/>
+            <div className="phoneInfo">Available 24 hours a day, 7 days a week</div>
+          </div>
+		</header>
 )
 
 export default Header

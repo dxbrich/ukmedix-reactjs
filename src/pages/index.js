@@ -5,6 +5,7 @@ import Waypoint from 'react-waypoint'
 
 import Layout from '../components/layout'
 import Header from '../components/Header'
+import HomeBanner from '../components/HomeBanner'
 import Nav from '../components/Nav'
 import pic01 from '../assets/images/pic01.jpg'
 
@@ -31,13 +32,14 @@ class Index extends React.Component {
         <Helmet title="Gatsby Starter - Stellar" />
 
         <Header />
+        <Nav sticky={this.state.stickyNav} />
+        <HomeBanner />
 
         <Waypoint
           onEnter={this._handleWaypointEnter}
           onLeave={this._handleWaypointLeave}
         >
         </Waypoint>
-        <Nav sticky={this.state.stickyNav} />
 
         <div id="main">
 

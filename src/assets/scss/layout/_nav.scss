@@ -13,19 +13,20 @@
 			'border-top-right-radius #{_duration(transition)} ease',
 			'padding #{_duration(transition)} ease',
 		));
-		@include color-typography(invert);
+		//@include color-typography(invert);
+		color: white;
 		position: absolute;
-		width: _size(inner);
-		max-width: calc(100% - #{_size(element-margin) * 2});
-		padding: 1em;
+		width: _size(full);
+		//max-width: calc(100% - #{_size(element-margin) * 2});
+		padding: 0.3em;
 		background-color: _palette(invert, bg-alt);
-		border-top-left-radius: _size(border-radius-main);
-		border-top-right-radius: _size(border-radius-main);
+		//border-top-left-radius: _size(border-radius-main);
+		//border-top-right-radius: _size(border-radius-main);
 		cursor: default;
 		text-align: center;
 
 		& + #main {
-			padding-top: 4.25em;
+			padding-top: 3.25em;
 		}
 
 		ul {
