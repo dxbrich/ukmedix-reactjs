@@ -16,7 +16,7 @@ const HomeBanner = (props) => (
                 </ul>
               <footer>
                 <ul className="buttons stacked">
-                  <li><a href="#main" className="button fit scrolly">Let's go >></a></li>
+                  <li><a href="#main" className="button fit scrolly">Let's go <i className="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
                 </ul>
               </footer>
 

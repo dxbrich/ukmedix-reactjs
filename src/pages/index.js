@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import Waypoint from 'react-waypoint'
 
 import Layout from '../components/layout'
+import OffersBanner from '../components/OffersBanner'
 import Header from '../components/Header'
 import HomeBanner from '../components/HomeBanner'
 import Nav from '../components/Nav'
@@ -31,15 +32,17 @@ class Index extends React.Component {
       <Layout>
         <Helmet title="Gatsby Starter - Stellar" />
 
+        <OffersBanner />
         <Header />
         <Nav sticky={this.state.stickyNav} />
-        <HomeBanner />
 
         <Waypoint
           onEnter={this._handleWaypointEnter}
           onLeave={this._handleWaypointLeave}
         >
         </Waypoint>
+
+        <HomeBanner />
 
         <div id="main">
 

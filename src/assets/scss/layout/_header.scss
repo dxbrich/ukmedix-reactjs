@@ -29,22 +29,23 @@
 			letter-spacing: _font(letter-spacing);
 		}
 
+
+
 		.phoneHeader {
 			color:#666;
 			text-align: right;
 			margin-top:-10px;
 
-			img {
-				height:1.7em;
-
-				margin:0 3px -1px 0;
+			.fa-phone {
+				font-size: 0.9em;
+				color:#ff9900;
 			}
 			.phoneNumber {
 				font-size: 2em;
 			}
 			.phoneInfo {
 				font-size: 0.85em;
-				margin-top: -7px;
+				margin-top: -8px;
 				color:gray;
 			}
 
@@ -60,6 +61,15 @@
 
 			input {
 				border-color: #ff9900;
+				width:75%;
+				display:inline-block;
+			}
+
+			.fa-search {
+				font-size:1.7em;
+				color:#ff9900;
+				display:inline-block;
+				margin-left:0.5em;
 			}
 
 			> * {

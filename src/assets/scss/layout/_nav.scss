@@ -29,6 +29,14 @@
 			padding-top: 3.25em;
 		}
 
+		.logo {
+			display:none;
+		}
+
+		.altOnly {
+			display:none;
+		}
+
 		ul {
 			margin: 0;
 			padding: 0;
@@ -81,6 +89,20 @@
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			z-index: _misc(z-index-base);
+
+			.logo {
+				display: inline-block;
+
+				img {
+					vertical-align: middle;
+					height:1.7em;
+				}
+
+			}
+
+			.altOnly {
+				display: inline-block;
+			}
 
 			ul {
 				li {

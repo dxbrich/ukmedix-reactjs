@@ -1,41 +1,36 @@
 import React from 'react'
-import Scrollspy from 'react-scrollspy'
-import Scroll from './Scroll'
 
 const Nav = (props) => (
     <nav id="nav" className={props.sticky ? 'alt' : ''}>
-        <Scrollspy items={ ['treatments', 'how-it-works', 'about-us', 'third', 'fourth', 'contact'] } currentClassName="is-active" offset={0}>
-            <li>
-                <Scroll type="id" element="treatments">
-                    <a href="/treatments">Treatments</a>
-                </Scroll>
+        <ul>
+            <li className="logo">
+              <a href="/"><img src="https://d1ixjh1f6kszit.cloudfront.net/img/_logo_ukmedix.png" /></a>
             </li>
             <li>
-                <Scroll type="id" element="how-it-works">
-                    <a href="/how-it-works">How It Works</a>
-                </Scroll>
+              <a href="/treatments">Treatments</a>
             </li>
             <li>
-                <Scroll type="id" element="about-us">
-                    <a href="about-us">About Us</a>
-                </Scroll>
+              <a href="/how-it-works">How It Works</a>
             </li>
             <li>
-                <Scroll type="id" element="third">
-                    <a href="#">Delivery</a>
-                </Scroll>
+              <a href="about-us">About Us</a>
             </li>
             <li>
-                <Scroll type="id" element="fourth">
-                    <a href="#">FAQ</a>
-                </Scroll>
+              <a href="#">Delivery</a>
             </li>
             <li>
-                <Scroll type="id" element="contact">
-                    <a href="#">Contact</a>
-                </Scroll>
+              <a href="#">FAQ</a>
             </li>
-        </Scrollspy>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li className="altOnly">
+              <i className="fa fa-search" aria-hidden="true"></i>
+            </li>
+            <li className="altOnly">
+              <i className="fa fa-phone" aria-hidden="true"></i>
+            </li>
+        </ul>
     </nav>
 )
 
